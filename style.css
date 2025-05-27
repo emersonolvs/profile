@@ -3,6 +3,10 @@ body {
   padding: 0;
   font-family: 'Arial', 'Helvetica', sans-serif;
   color: #fff;
+  background: #000;
+  overflow: hidden;
+  overflow-y: auto;   /* Permite rolagem vertical */
+  position: relative;
 }
 
 header {
@@ -122,7 +126,7 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-  background-color: #ccc;
+  background-color: #fff;
   border-radius: 5px;
 }
 
@@ -212,4 +216,44 @@ footer {
 /* Menu ativo */
 nav ul li a.active {
   border-bottom: 2px solid orange;
+}
+
+.bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bubbles span {
+  position: absolute;
+  display: block;
+  bottom: -50px;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 165, 0, 0.5); /* 40% de opacidade */
+  border-radius: 50%;
+  animation: bubble 20s linear infinite;
+  left: calc(100% * var(--i) / 30);
+  animation-duration: calc(10s + var(--i) * 0.5s);
+  z-index: 0;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
 }

@@ -30,7 +30,6 @@ document.querySelectorAll('.card, .contato-card').forEach(el => observer.observe
 
 // Botão "Voltar ao topo"
 const backToTop = document.createElement('button');
-backToTop.textContent = '⇧';
 backToTop.style.position = 'fixed';
 backToTop.style.bottom = '20px';
 backToTop.style.right = '20px';

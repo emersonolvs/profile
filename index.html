@@ -13,7 +13,7 @@
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#contato">Contatos</a></li>
       </ul>
     </nav>
   </header>
@@ -48,35 +48,35 @@
     <div class="carousel">
       <div class="card">
         <img src="assets/projeto1.png" alt="Kanban" />
-        <p><strong>Lista de tarefas Kanban</strong><br/>Organizador de fluxo de trabalho</p>
+       <p><a href="https://github.com/emersonolvs" target="_blank">Kanban</a></p>
       </div>
       <div class="card">
-        <img src="assets/projeto2.png" alt="Lâmpada" />
-        <p><strong>Conta Digital</strong><br/>...</p>
+        <img src="assets/projeto2.png" alt="Conta Digital" />
+        <p><a href="https://github.com/emersonolvs" target="_blank">Conta Digital</a></p>
       </div>
       <div class="card">
         <img src="assets/projeto3.png" alt="Jogo da Memória" />
-        <p><strong>Jogo de memória</strong><br/>Testa sua memorização de forma divertida</p>
+        <p><a href="https://github.com/emersonolvs" target="_blank">Jogo da memória</a></p>
       </div>
       <div class="card">
-        <img src="assets/projeto4.png" alt="Lâmpada" />
-        <p><strong>Lista de tarefas (ou quiz)</strong><br/>...</p>
+        <img src="assets/projeto4.png" alt="Quiz" />
+        <p><a href="https://github.com/emersonolvs" target="_blank">Quiz de esportes</a></p>
       </div>
       <div class="card">
         <img src="assets/projeto5.png" alt="Selecione um carro" />
-        <p><strong>Selecione um carro</strong><br/>Selecione a cor do carro e acelere</p>
+        <p><a href="https://github.com/emersonolvs" target="_blank">Selecione um carro</a></p>
       </div>
       <div class="card">
         <img src="assets/projeto6.png" alt="Jogo número oculto" />
-        <p><strong>Jogo número oculto</strong><br/>Acerte o número oculto</p>
+        <p><a href="https://github.com/emersonolvs" target="_blank">Jogo número oculto</a></p>
       </div>
       <div class="card">
         <img src="assets/projeto7.png" alt="Lâmpada" />
-        <p><strong>Lâmpada</strong><br/>Sistema de acender e apagar</p>
+        <p><a href="https://github.com/emersonolvs" target="_blank">Lâmpada</a></p>
       </div>
       <div class="card">
         <img src="assets/projeto8.png" alt="Calculadora" />
-        <p><strong>Calculadora</strong><br/>Funções básicas</p>
+        <p><a href="https://github.com/emersonolvs" target="_blank">Calculadora</a></p>
       </div>
     </div>
   </section>
@@ -94,7 +94,7 @@
   </section>
 
   <section id="contato" class="section-light">
-    <h2>Contato</h2>
+    <h2>Contatos</h2>
     <div class="contato-cards">
       <div class="contato-card">
         <img src="assets/localizacao.jpg" alt="localizacao" />
@@ -114,6 +114,39 @@
       </div>
     </div>
   </section>
+
+  <div class="bubbles">
+  <!-- 20 bolhas -->
+  <span style="--i:11;"></span>
+  <span style="--i:12;"></span>
+  <span style="--i:24;"></span>
+  <span style="--i:10;"></span>
+  <span style="--i:14;"></span>
+  <span style="--i:23;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:16;"></span>
+  <span style="--i:19;"></span>
+  <span style="--i:20;"></span>
+  <span style="--i:22;"></span>
+  <span style="--i:25;"></span>
+  <span style="--i:18;"></span>
+  <span style="--i:21;"></span>
+  <span style="--i:15;"></span>
+  <span style="--i:13;"></span>
+  <span style="--i:26;"></span>
+  <span style="--i:17;"></span>
+  <span style="--i:13;"></span>
+  <span style="--i:28;"></span>
+</div>
+
+<script>
+  const container = document.querySelector(".bubbles");
+  for (let i = 0; i < 30; i++) {
+    const bubble = document.createElement("span");
+    bubble.style.setProperty("--i", Math.floor(Math.random() * 30) + 1);
+    container.appendChild(bubble);
+  }
+</script>
 
   <footer>
     <p>Emerson Oliveira Souza © 2025</p>
