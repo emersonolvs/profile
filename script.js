@@ -28,33 +28,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.card, .contato-card').forEach(el => observer.observe(el));
 
-// Botão "Voltar ao topo"
-const backToTop = document.createElement('button');
-backToTop.style.position = 'fixed';
-backToTop.style.bottom = '20px';
-backToTop.style.right = '20px';
-backToTop.style.padding = '10px 15px';
-backToTop.style.fontSize = '20px';
-backToTop.style.borderRadius = '50%';
-backToTop.style.border = 'none';
-backToTop.style.cursor = 'pointer';
-backToTop.style.display = 'none';
-backToTop.style.zIndex = '1000';
-backToTop.title = 'Voltar ao topo';
-document.body.appendChild(backToTop);
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    backToTop.style.display = 'block';
-  } else {
-    backToTop.style.display = 'none';
-  }
-});
-
-backToTop.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
 // Menu ativo conforme a rolagem
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('nav ul li a');
