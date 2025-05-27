@@ -55,6 +55,7 @@ nav ul {
   gap: 20px;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -99,6 +100,18 @@ nav a {
   overflow-x: auto;
   justify-content: center;
   padding: 20px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+  flex: 0 0 auto;              /* impede que o item estique */
+  width: 300px;                /* largura fixa */
+  height: 400px;               /* altura fixa opcional */
+  background: #000;
+  border-radius: 15px;
+  scroll-snap-align: start;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .card {
@@ -108,6 +121,10 @@ nav a {
   width: 180px;
   border-radius: 10px;
   text-align: center;
+  flex: 0 0 220px;
+  width: auto; 
+  max-width: 90%;
+  scroll-snap-align: center;
 }
 
 .skills div {
