@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  color: #fff;
+}
+
+header {
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  text-align: right;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sobre-container {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 50px auto;
+  gap: 40px;
+  padding: 40px 20px;
+  flex-direction: row; /* empilha os elementos verticalmente */
+  flex-wrap: wrap;
+}
+
+.perfil {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 80%;
+  box-shadow: 0 0 65px 5px rgb(255, 165, 0); /* efeito esfumado laranja */
+}
+
+.texto-sobre {
+  max-width: 1000px;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff; /* ou #000 se fundo for claro */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none; /* tira sublinhado padrão */
+  padding-bottom: 1px; /* espaço para o underline */
+  border-bottom: 2px solid transparent; /* espaço para sublinhado invisível */
+  transition: border-color 0.3s ease;
+  color: orange; /* ou a cor que quiser */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  border-bottom-color: black; /* sublinha só no hover/focus */
+}
+
+nav a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
+.section-dark {
+  background-color: #000;
+  padding: 40px 20px;
+}
+
+.section-light {
+  background-color: #fff;
+  color: #000;
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.card {
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  width: 180px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.skills div {
+  margin-bottom: 10px;
+}
+
+.skills label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+  background-color: orange;
+  border-radius: 5px;
+}
+
+.contato-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contato-card {
+  background: #000000;
+  color: #fff;
+  border: 3px solid white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+footer {
+  background: #000;
+  color: orange;
+  text-align: center;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;             /* faz a imagem ocupar toda a largura do card */
+  height: 160px;            /* mantém a proporção original */
+  max-height: 180px;       /* limita a altura para manter o layout equilibrado */
+  object-fit: cover;       /* corta as bordas se necessário para manter o enquadramento */
+  border-radius: 8px;      /* cantos arredondados (opcional) */
+  margin-bottom: 10px;     /* espaço entre a imagem e o texto */
+}
+
+.contato-cards img {
+  width: 100%;             /* faz a imagem ocupar toda a largura do card */
+  height: 200px;            /* mantém a proporção original */
+  max-height: 225px;       /* limita a altura para manter o layout equilibrado */
+  object-fit: cover;       /* corta as bordas se necessário para manter o enquadramento */
+  border-radius: 8px;      /* cantos arredondados (opcional) */
+  margin-bottom: 10px;     /* espaço entre a imagem e o texto */
+}
+
+/* Animação de entrada */
+.card, .contato-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.aparecer {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark mode (reverso do light) */
+.dark-mode {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.dark-mode nav,
+.dark-mode header,
+.dark-mode footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .section-light {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .card, 
+.dark-mode .contato-card {
+  background-color: #000;
+  border-color: orange;
+}
+
+/* Menu ativo */
+nav ul li a.active {
+  border-bottom: 2px solid orange;
+}
