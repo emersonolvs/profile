@@ -2,9 +2,9 @@
 const toggleThemeButton = document.createElement('button');
 toggleThemeButton.textContent = '🌙';
 toggleThemeButton.style.position = 'fixed';
-toggleThemeButton.style.top = '10px';
-toggleThemeButton.style.left = '10px';
-toggleThemeButton.style.padding = '10px';
+toggleThemeButton.style.top = '15px';
+toggleThemeButton.style.left = '15px';
+toggleThemeButton.style.padding = '15px';
 toggleThemeButton.style.borderRadius = '50%';
 toggleThemeButton.style.border = 'none';
 toggleThemeButton.style.cursor = 'pointer';
