@@ -186,7 +186,6 @@ progress::-webkit-progress-value {
 .contato-card {
   background: #000000;
   color: #fff;
-  border: 3px solid white;
   padding: 20px;
   border-radius: 15px;
   width: 250px;
@@ -228,30 +227,6 @@ footer {
 .aparecer {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Dark mode (reverso do light) */
-.dark-mode {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-
-.dark-mode nav,
-.dark-mode header,
-.dark-mode footer {
-  background-color: #000;
-  color: #fff;
-}
-
-.dark-mode .section-light {
-  background-color: #000;
-  color: #fff;
-}
-
-.dark-mode .card, 
-.dark-mode .contato-card {
-  background-color: #000;
-  border-color: orange;
 }
 
 /* Menu ativo */

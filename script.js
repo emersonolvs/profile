@@ -1,22 +1,3 @@
-// Alternar modo claro/escuro
-const toggleThemeButton = document.createElement('button');
-toggleThemeButton.textContent = '🌙';
-toggleThemeButton.style.position = 'fixed';
-toggleThemeButton.style.top = '15px';
-toggleThemeButton.style.left = '15px';
-toggleThemeButton.style.padding = '15px';
-toggleThemeButton.style.borderRadius = '50%';
-toggleThemeButton.style.border = 'none';
-toggleThemeButton.style.cursor = 'pointer';
-toggleThemeButton.style.zIndex = '1000';
-toggleThemeButton.title = 'Alternar modo claro/escuro';
-document.body.appendChild(toggleThemeButton);
-
-toggleThemeButton.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  toggleThemeButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-});
-
 // Animação suave dos cards ao rolar a página
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -26,7 +7,7 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-document.querySelectorAll('.card, .contato-card').forEach(el => observer.observe(el));
+document.querySelectorAll('.contato-card, .carousel-item').forEach(el => observer.observe(el));
 
 // Menu ativo conforme a rolagem
 const sections = document.querySelectorAll('section');
