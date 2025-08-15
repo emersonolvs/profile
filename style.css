@@ -3,15 +3,16 @@ body {
   padding: 0;
   font-family: 'Arial', 'Helvetica', sans-serif;
   color: #fff;
-  background: #000;
+  background: #1C1C1C;
   overflow: hidden;
-  overflow-y: auto;   /* Permite rolagem vertical */
+  overflow-y: auto;
+  /* Permite rolagem vertical */
   position: relative;
 }
 
 header {
   background: #fff;
-  color: #000;
+  color: #1C1C1C;
   padding: 10px;
   text-align: right;
 }
@@ -28,7 +29,8 @@ html {
   margin: 50px auto;
   gap: 40px;
   padding: 40px 20px;
-  flex-direction: row; /* empilha os elementos verticalmente */
+  flex-direction: row;
+  /* empilha os elementos verticalmente */
   flex-wrap: wrap;
 }
 
@@ -37,7 +39,8 @@ html {
   height: 220px;
   object-fit: cover;
   border-radius: 80%;
-  box-shadow: 0 0 65px 5px rgb(255, 165, 0); /* efeito esfumado laranja */
+  box-shadow: 0 0 65px 5px rgb(255, 165, 0);
+  /* efeito esfumado laranja */
 }
 
 .texto-sobre {
@@ -45,7 +48,8 @@ html {
   text-align: left;
   font-size: 1rem;
   line-height: 1.6;
-  color: #fff; /* ou #000 se fundo for claro */
+  color: #fff;
+  /* ou #000 se fundo for claro */
 }
 
 nav ul {
@@ -59,16 +63,21 @@ nav ul {
 }
 
 nav ul li a {
-  text-decoration: none; /* tira sublinhado padrão */
-  padding-bottom: 1px; /* espaço para o underline */
-  border-bottom: 2px solid transparent; /* espaço para sublinhado invisível */
+  text-decoration: none;
+  /* tira sublinhado padrão */
+  padding-bottom: 1px;
+  /* espaço para o underline */
+  border-bottom: 2px solid transparent;
+  /* espaço para sublinhado invisível */
   transition: border-color 0.3s ease;
-  color: orange; /* ou a cor que quiser */
+  color: orange;
+  /* ou a cor que quiser */
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-  border-bottom-color: black; /* sublinha só no hover/focus */
+  border-bottom-color: #1C1C1C;
+  /* sublinha só no hover/focus */
 }
 
 nav a {
@@ -78,13 +87,13 @@ nav a {
 }
 
 .section-dark {
-  background-color: #000;
+  background-color: #1C1C1C;
   padding: 40px 20px;
 }
 
 .section-light {
   background-color: #fff;
-  color: #000;
+  color: #1C1C1C;
   padding: 40px 20px;
 }
 
@@ -100,17 +109,19 @@ nav a {
   overflow-x: auto;
   padding: 20px 0;
   scroll-snap-type: x mandatory;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-item {
-  flex: 0 0 260px;
-  max-width: 300px;
+  flex: 0 0 300px;
+  max-width: 360px;
   overflow: hidden;
   height: auto;
   scroll-snap-align: start;
   border-radius: 15px;
   display: block;
-  background-color: #000;
+  background-color: #1C1C1C;
   box-sizing: border-box;
   padding: 10px;
   color: #fff;
@@ -119,8 +130,8 @@ nav a {
 .carousel-item a {
   display: block;
   text-align: center;
-  margin-top: 10px;
-  color: #a76cff;
+  margin-top: 20px;
+  color: #1a73e8;
   text-decoration: underline;
 }
 
@@ -139,14 +150,14 @@ nav a {
 }
 
 .card {
-  background: #000;
+  background: #1C1C1C;
   color: #fff;
   padding: 15px;
   width: 180px;
   border-radius: 10px;
   text-align: center;
   flex: 0 0 220px;
-  width: auto; 
+  width: auto;
   max-width: 90%;
   scroll-snap-align: center;
 }
@@ -184,7 +195,7 @@ progress::-webkit-progress-value {
 }
 
 .contato-card {
-  background: #000000;
+  background: #1C1C1C;
   color: #fff;
   padding: 20px;
   border-radius: 15px;
@@ -193,32 +204,45 @@ progress::-webkit-progress-value {
 }
 
 footer {
-  background: #000;
+  background: #1C1C1C;
   color: orange;
   text-align: center;
   padding: 10px;
 }
 
 .card img {
-  width: 100%;             /* faz a imagem ocupar toda a largura do card */
-  height: 160px;            /* mantém a proporção original */
-  max-height: 180px;       /* limita a altura para manter o layout equilibrado */
-  object-fit: cover;       /* corta as bordas se necessário para manter o enquadramento */
-  border-radius: 8px;      /* cantos arredondados (opcional) */
-  margin-bottom: 10px;     /* espaço entre a imagem e o texto */
+  width: 100%;
+  /* faz a imagem ocupar toda a largura do card */
+  height: 160px;
+  /* mantém a proporção original */
+  max-height: 180px;
+  /* limita a altura para manter o layout equilibrado */
+  object-fit: cover;
+  /* corta as bordas se necessário para manter o enquadramento */
+  border-radius: 8px;
+  /* cantos arredondados (opcional) */
+  margin-bottom: 10px;
+  /* espaço entre a imagem e o texto */
 }
 
 .contato-cards img {
-  width: 100%;             /* faz a imagem ocupar toda a largura do card */
-  height: 200px;            /* mantém a proporção original */
-  max-height: 225px;       /* limita a altura para manter o layout equilibrado */
-  object-fit: cover;       /* corta as bordas se necessário para manter o enquadramento */
-  border-radius: 8px;      /* cantos arredondados (opcional) */
-  margin-bottom: 10px;     /* espaço entre a imagem e o texto */
+  width: 100%;
+  /* faz a imagem ocupar toda a largura do card */
+  height: 200px;
+  /* mantém a proporção original */
+  max-height: 225px;
+  /* limita a altura para manter o layout equilibrado */
+  object-fit: cover;
+  /* corta as bordas se necessário para manter o enquadramento */
+  border-radius: 8px;
+  /* cantos arredondados (opcional) */
+  margin-bottom: 10px;
+  /* espaço entre a imagem e o texto */
 }
 
 /* Animação de entrada */
-.card, .contato-card {
+.card,
+.contato-card {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s ease;
@@ -252,7 +276,8 @@ nav ul li a.active {
   width: 20px;
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 165, 0, 0.5); /* 40% de opacidade */
+  background: rgba(255, 165, 0, 0.5);
+  /* 40% de opacidade */
   border-radius: 50%;
   animation: bubble 20s linear infinite;
   left: calc(100% * var(--i) / 30);
@@ -265,9 +290,11 @@ nav ul li a.active {
     transform: translateY(0) scale(1);
     opacity: 0;
   }
+
   50% {
     opacity: 0.3;
   }
+
   100% {
     transform: translateY(-100vh) scale(0.5);
     opacity: 0;
