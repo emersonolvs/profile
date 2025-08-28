@@ -39,7 +39,7 @@ html {
   height: 220px;
   object-fit: cover;
   border-radius: 80%;
-  box-shadow: 0 0 65px 5px rgb(255, 165, 0);
+  box-shadow: 0 0 65px 5px #00c4cc
   /* efeito esfumado laranja */
 }
 
@@ -70,19 +70,19 @@ nav ul li a {
   border-bottom: 2px solid transparent;
   /* espaço para sublinhado invisível */
   transition: border-color 0.3s ease;
-  color: orange;
+  color: #1C1C1C
   /* ou a cor que quiser */
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-  border-bottom-color: #1C1C1C;
+  border-bottom-color: #00c4cc;
   /* sublinha só no hover/focus */
 }
 
 nav a {
   text-decoration: none;
-  color: orange;
+  color: #00c4cc;
   font-weight: bold;
 }
 
@@ -183,7 +183,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: orange;
+  background-color: #00c4cc;
   border-radius: 5px;
 }
 
@@ -205,7 +205,7 @@ progress::-webkit-progress-value {
 
 footer {
   background: #1C1C1C;
-  color: orange;
+  color: #fff;
   text-align: center;
   padding: 10px;
 }
@@ -255,48 +255,6 @@ footer {
 
 /* Menu ativo */
 nav ul li a.active {
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #00c4cc;
 }
 
-.bubbles {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.bubbles span {
-  position: absolute;
-  display: block;
-  bottom: -50px;
-  width: 20px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 165, 0, 0.5);
-  /* 40% de opacidade */
-  border-radius: 50%;
-  animation: bubble 20s linear infinite;
-  left: calc(100% * var(--i) / 30);
-  animation-duration: calc(10s + var(--i) * 0.5s);
-  z-index: 0;
-}
-
-@keyframes bubble {
-  0% {
-    transform: translateY(0) scale(1);
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.3;
-  }
-
-  100% {
-    transform: translateY(-100vh) scale(0.5);
-    opacity: 0;
-  }
-}
